@@ -1,7 +1,7 @@
 <template>
   <div v-if="editor" class="vuetify-pro-tiptap" :class="{ dense }">
     <!-- Edit Mode -->
-    <BubbleMenu :editor="editor" :dark="isDark" :disabled="disableToolbar" :items="items" />
+   <!-- <BubbleMenu :editor="editor" :dark="isDark" :disabled="disableToolbar" :items="items" />  -->
 
     <v-subheader v-if="label">{{ label }}</v-subheader>
 
@@ -68,7 +68,7 @@ import merge from 'lodash.merge'
 import { Editor, EditorContent } from '@tiptap/vue-2'
 import type { AnyExtension, EditorOptions } from '@tiptap/vue-2'
 import TipTapToolbar from './TipTapToolbar.vue'
-import BubbleMenu from './BubbleMenu/index.vue'
+//import BubbleMenu from './BubbleMenu/index.vue'
 import TiptapKit from '@/core/tiptap-kit'
 import type { StarterKitOptions } from '@/core/tiptap-kit'
 
@@ -100,7 +100,7 @@ export default defineComponent({
   components: {
     TipTapToolbar,
     EditorContent,
-    BubbleMenu
+ //   BubbleMenu
   },
   props: {
     value: string().def(''),
